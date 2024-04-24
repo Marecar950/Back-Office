@@ -1,0 +1,76 @@
+<div class="card">
+  <p-toolbar styleClass="bg-gray-900 shadow-2" [style]="{ 'background-image': 'linear-gradient(to right, var(--bluegray-500), var(--bluegray-800))' }">
+    <ng-template pTemplate="start">
+      <img src="/assets/images/logo.png" style="height: 50px; width: auto; margin-right: 10px;"/>
+    </ng-template>
+    <ng-template pTemplate="center">
+      <div class="flex flex-wrap align-items-center gap-3">
+        <button class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-3rem border-circle hover:bg-white-alpha-10 transition-all transition-duration-200"><i class="pi pi-home text-2xl"></i></button>
+        <button class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-3rem border-circle hover:bg-white-alpha-10 transition-all transition-duration-200"><i class="pi pi-user text-2xl"></i></button>
+        <button class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-3rem border-circle hover:bg-white-alpha-10 transition-all transition-duration-200"><i class="pi pi-search text-2xl"></i></button>
+      </div>
+    </ng-template>
+    <ng-template pTemplate="end">
+      <div class="flex align-items-center gap-2">
+        <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle" />
+        <span class="font-bold text-bluegray-50">Amy Elsner</span>
+      </div>
+    </ng-template>
+  </p-toolbar>
+</div>
+
+
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8 text-center">
+  <div class="mb-3 font-bold text-3xl">
+    <span class="text-blue-800">Mon point de vente</span>
+  </div>
+  <div class="text-700 mb-6 font-bold">Ac turpis egestas maecenas pharetra convallis posuere morbi leo urna.</div>
+  <div class="grid">
+    <div class="col-12 md:col-4 mb-4 px-5">
+            <span class="p-3 shadow-2 mb-3 inline-block surface-card" style="border-radius: 10px">
+                <i class="pi pi-folder text-4xl text-green-500" routerLink="/poissons"></i>
+            </span>
+      <div class="text-900 text-xl mb-3 font-bold text-green-600">Les Poissons</div>
+      <span class="text-blue-700 line-height-3 font-bold">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+    </div>
+    <div class="col-12 md:col-4 mb-4 px-5">
+            <span class="p-3 shadow-2 mb-3 inline-block surface-card" style="border-radius: 10px">
+                <i class="pi pi-folder text-4xl text-green-500" routerLink="/crustaces"></i>
+            </span>
+      <div class="text-900 text-xl mb-3 font-bold text-green-600">Les Crustacées</div>
+      <span class="text-blue-700 line-height-3 font-bold">Risus nec feugiat in fermentum posuere urna nec. Posuere sollicitudin aliquam ultrices sagittis.</span>
+    </div>
+    <div class="col-12 md:col-4 mb-4 px-5">
+            <span class="p-3 shadow-2 mb-3 inline-block surface-card" style="border-radius: 10px">
+                <i class="pi pi-folder text-4xl text-green-500" routerLink="/fruitdemers"></i>
+            </span>
+      <div class="text-900 text-xl mb-3 font-bold text-green-600">Les Fruits de mer</div>
+      <span class="text-blue-700 line-height-3 font-bold">Ornare suspendisse sed nisi lacus sed viverra tellus. Neque volutpat ac tincidunt vitae semper.</span>
+    </div>
+    <div class="col-12 md:col-4 mb-4 px-5">
+            <span class="p-3 shadow-2 mb-3 inline-block surface-card" style="border-radius: 10px">
+                <i class="pi pi-folder text-4xl text-green-500" routerLink="/produits"></i>
+            </span>
+      <div class="text-900 text-xl mb-3 font-bold text-green-600" routerLink="">Tous les Produits</div>
+      <span class="text-blue-700 line-height-3 font-bold">Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum tellus.</span>
+    </div>
+    <div class="col-12 md:col-4 mb-4 px-5">
+            <span class="p-3 shadow-2 mb-3 inline-block surface-card" style="border-radius: 10px">
+                <i class="pi pi-dollar text-4xl text-green-500" routerLink="/finances"></i>
+            </span>
+      <div class="text-900 text-xl mb-3 font-bold text-green-600">Les Finances</div>
+      <span class="text-blue-700 line-height-3 font-bold">Nec tincidunt praesent semper feugiat. Sed adipiscing diam donec adipiscing tristique risus nec feugiat. </span>
+    </div>
+    <div class="col-12 md:col-4 md:mb-4 mb-0 px-3">
+            <span class="p-3 shadow-2 mb-3 inline-block surface-card" style="border-radius: 10px">
+                <i class="pi pi-shield text-4xl text-red-500" routerLink="/alertes"></i>
+            </span>
+      <div class="text-900 text-xl mb-3 font-bold text-green-600">Les Alertes</div>
+      <span class="text-blue-700 line-height-3 font-bold">Mattis rhoncus urna neque viverra justo nec ultrices. Id cursus metus aliquam eleifend.</span>
+    </div>
+  </div>
+</div>
+
+<p-divider></p-divider>
+
+<router-outlet></router-outlet>
